@@ -25,9 +25,8 @@ Pod::Spec.new do |s|
   s.vendored_libraries = "*.a"
   s.static_framework = true
   s.dependency "AlipaySDK-iOS"
+  s.dependency "WechatOpenSDK"
 
-  s.frameworks = ["SystemConfiguration", "CoreTelephony"]
-  s.libraries = ["z", "sqlite3.0", "c++"]
   s.ios.deployment_target = '8.0'
 
 end
